@@ -1,4 +1,19 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-<a href="/about">go to my about page</a>
-<a href="purpose">go to the purpose of this page</a>
+<script>
+	import Question from "./componets /question.svelte";
+import Score from "./componets /score.svelte";
+
+</script>
+
+<Score  score= {14}/>
+
+<Question 
+number={1}
+    answer1= "first answer"
+    answer2= "second answer"
+    answer3= "third answer"
+    answer4= "None of the above"
+This is my Question?
+>
+</Question>
+
+
