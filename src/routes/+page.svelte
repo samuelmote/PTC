@@ -7,11 +7,11 @@
 
 <Question
 	number={1}
-	answer1="first answer"
-	answer2="second answer"
-	answer3="third answer"
-	answer4="fourth answer"
+	answer1="red"
+	answer2="blue"
+	answer3="pink"
+	answer4="orange"
     answer="a"
 >
-	This is my Question?
+	what is my favorite color?
 </Question>
