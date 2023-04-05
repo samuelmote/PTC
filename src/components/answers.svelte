@@ -2,7 +2,7 @@
     export let answer= true;
  </script>
  {#if answer}
- <p>Great job</p>
+ <p style="color: green; "> Great job</p>
     {:else} 
-    <p> wasn't quite right...</p>
+    <p style="color: red;"> wasn't quite right...</p>
  {/if}
