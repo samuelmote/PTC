@@ -8,7 +8,7 @@
 	export let answer4 = '';
 
 	/** @type { "a" | "b" | "c" | "d" } */
-	export let answers = "a";
+	export let answer = "a";
 	/** @type { "a" | "b" | "c" | "d" } */
 	let selected= "a";
 </script>
@@ -46,4 +46,4 @@
 	</label>
 </div>
 
-<Answers answer={answers == selected} />
+<Answers answer={answer == selected} />
