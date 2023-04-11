@@ -12,8 +12,14 @@
 	answer3="pink"
 	answer4="orange"
     answer="a"
->
-	what is my favorite color?
+>what is my favorite color?
+	<style> 
+	.Question{
+	color: #ffffff;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	</style>
 </Question>
 
 <Question
@@ -22,7 +28,7 @@
 	answer2="17"
 	answer3="16"
 	answer4="old"
-    answer="a"
+    answer="c"
 >
 	how old am I?
 </Question>
