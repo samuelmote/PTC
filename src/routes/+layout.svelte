@@ -1,36 +1,51 @@
+<script>
+	import Score from '../components/score.svelte';
+</script>
+
 <div class="background">
 	<div class="layout">
-		<slot />
+		<div class="header">
+			<Score score={0} />
+		</div>
+		<div class="content"><slot /></div>
 	</div>
 </div>
 
+
+
 <style>
 	.background {
-        padding: 32px;
+		padding: 32px;
+		display: grid;
 		position: absolute;
 		inset: 0;
-        
-		background-color: #e3a68d;
+		background-color: var(--color-purple);
 	}
-    .layout {
-        width: 100%;
-        max-width: 524px;
-        margin: 50 auto;
-		text-align: justify; /* For Edge */
-  text-align-last: center;
-		border:1px soild rgb(21, 12, 8);
-  text-shadow: .5px .5px #ffffff;
-  position: absolute;
-  top: 50px;
-  border: 7px solid rgb(0, 0, 0);
+	.layout {
+		width: 100%;
+		max-width: 1024px;
+		margin: 0 auto;
 
+    display: grid;
+		grid-template-rows: auto 1fr;
+		align-items: center;
+		/* text-align: justify; /* For Edge */
+		/* text-align-last: center; */
+		/* border: 1px soild rgb(21, 12, 8); */
+		/* text-shadow: 0.5px 0.5px #ffffff; */
+		/* position: absolute; */
+		/* top: 50px; */
+	}
+
+.header, 
+.content {
+  background-color: white;
+  border: 4px solid black;
+  padding: 12px 24px;
 
 }
-.layout {
-  position: absolute;
-  left: 460px;
-  top: 100px;
+.header {
+  display: flex;
+  justify-content: space-between;
 }
 </style>
- 
-need to find out how to make font/text bigger
